@@ -2,8 +2,9 @@ import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from "next/head";
 import 'bootstrap/dist/css/bootstrap.min.css'
+import * as React from "react";
 
-export default function App({ Component, pageProps }: AppProps) {
+const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
@@ -14,3 +15,6 @@ export default function App({ Component, pageProps }: AppProps) {
     </>
   )
 }
+
+
+export default App
